@@ -5,5 +5,12 @@
     "Outcome": "Approved",
     "RejectionReason": "",
     "Comment": "Smaller repository with an appreciated PR that cleans up a few unused lines."
+  },
+  {
+    "GitHub_PR_URL": "https://github.com/i3/i3/pull/2973",
+    "Type": "BugFix",
+    "Outcome": "Rejected",
+    "RejectionReason": "Quality Concerns",
+    "Comment": "A bugfix attempt that tries to fix an issue where workspaces named as a number causes a crash. Rejected due to problematic approach to solution."
   }
 ]
