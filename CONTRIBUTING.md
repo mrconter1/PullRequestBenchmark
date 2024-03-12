@@ -55,10 +55,16 @@ To help standardize the contributions and ensure consistency across the dataset,
 
 When documenting a PR, select the type that best describes the nature of the contribution:
 
-- **Bugfix**: Addresses and resolves a specific issue or bug in the code.
-- **Feature**: Introduces new functionality or features to the project.
-- **Improvement**: Enhancements or optimizations to existing code or features without adding new functionality.
-- **Documentation**: Updates, additions, or improvements to documentation.
+1. **Bugfix**: Addresses and resolves an issue or error in the existing code.
+2. **Feature**: Adds new functionality or features to the project.
+3. **Documentation**: Improves or adds to the project's documentation.
+4. **Improvement**: Enhances existing features or the project's performance without adding new functionality.
+5. **Refactoring**: Code changes that neither fix a bug nor add a feature but improve the structure or readability.
+6. **Testing**: Adds or improves existing tests, including unit tests, integration tests, and end-to-end tests.
+7. **Dependency Update**: Updates or modifies project dependencies, libraries, or frameworks.
+8. **Configuration Change**: Adjustments to project configuration files or settings.
+9. **UI/UX**: Changes or enhancements to the user interface or user experience design.
+10. **Localization**: Adds or improves support for additional languages or regional settings.
 
 ### Rejection Reasons
 
