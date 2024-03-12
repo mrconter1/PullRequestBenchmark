@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to PullRequestBenchmark, a groundbreaking dataset and evaluation framework crafted to scrutinize the ability of Large Language Models (LLMs) in accurately approving or rejecting pull requests (PRs) in a manner consistent with human developers. Developed by Rasmus Lindahl, this benchmark aims to bridge the gap between artificial intelligence and software development practices, offering a unique tool to measure the contextual understanding and decision-making prowess of LLMs in real-world coding environments.
+Welcome to PullRequestBenchmark, a new dataset crafted to scrutinize the ability of Large Language Models (LLMs) in accurately approving or rejecting pull requests (PRs) in a manner consistent with human developers. Developed by Rasmus Lindahl, this benchmark aims to bridge the gap between artificial intelligence and software development practices, offering a unique tool to measure the contextual understanding and decision-making prowess of LLMs in real-world coding environments.
 
 ## Project Objective
 
@@ -21,15 +21,6 @@ The dataset comprises several key attributes for each PR, including:
 ## Exclusion Policy
 
 It is crucial that any foundation models trained with this dataset explicitly exclude the repository and its code to prevent any bias or overfitting. This ensures the integrity and the generalizability of the model's decision-making capabilities.
-
-## Getting Started
-
-To utilize the PullRequestBenchmark for training or evaluating your LLM, follow these steps:
-
-1. **Clone the Repository**: Access the latest version of the dataset and evaluation tools.
-2. **Dataset Preparation**: Familiarize yourself with the dataset structure and prepare your model's training environment accordingly.
-3. **Model Training**: Integrate the dataset into your model's training regime, ensuring to adhere to the exclusion policy.
-4. **Evaluation**: Use the provided evaluation framework to assess your model's performance against the benchmark.
 
 ## Benchmark Input and Output
 
