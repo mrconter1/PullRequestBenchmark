@@ -1,17 +1,9 @@
 [
   {
-    "GitHub_PR_URL": "https://github.com/exampleRepo1/pull/123",
-    "Type": "Bugfix",
-    "RejectionReason": ""
-  },
-  {
-    "GitHub_PR_URL": "https://github.com/exampleRepo2/pull/456",
-    "Type": "Feature",
-    "RejectionReason": "Non-equivalent functionality"
-  },
-  {
-    "GitHub_PR_URL": "https://github.com/exampleRepo3/pull/789",
-    "Type": "Documentation",
-    "RejectionReason": ""
+    "GitHub_PR_URL": "https://github.com/tronkko/dirent/pull/44",
+    "Type": "Refactoring",
+    "Outcome": "Approved",
+    "RejectionReason": "",
+    "Comment": "Smaller repository with an appreciated PR that cleans up a few unused lines."
   }
 ]
