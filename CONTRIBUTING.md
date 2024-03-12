@@ -57,31 +57,31 @@ To help standardize the contributions and ensure consistency across the dataset,
 
 When documenting a PR, select the type that best describes the nature of the contribution:
 
-1. **Bugfix**: Addresses and resolves an issue or error in the existing code.
-2. **Feature**: Adds new functionality or features to the project.
-3. **Documentation**: Improves or adds to the project's documentation.
-4. **Improvement**: Enhances existing features or the project's performance without adding new functionality.
-5. **Refactoring**: Code changes that neither fix a bug nor add a feature but improve the structure or readability.
-6. **Testing**: Adds or improves existing tests, including unit tests, integration tests, and end-to-end tests.
-7. **Dependency Update**: Updates or modifies project dependencies, libraries, or frameworks.
-8. **Configuration Change**: Adjustments to project configuration files or settings.
-9. **UI/UX**: Changes or enhancements to the user interface or user experience design.
-10. **Localization**: Adds or improves support for additional languages or regional settings.
+1. `Bugfix`: Addresses and resolves an issue or error in the existing code.
+2. `Feature`: Adds new functionality or features to the project.
+3. `Documentation`: Improves or adds to the project's documentation.
+4. `Improvement`: Enhances existing features or the project's performance without adding new functionality.
+5. `Refactoring`: Code changes that neither fix a bug nor add a feature but improve the structure or readability.
+6. `Testing`: Adds or improves existing tests, including unit tests, integration tests, and end-to-end tests.
+7. `Dependency Update`: Updates or modifies project dependencies, libraries, or frameworks.
+8. `Configuration Change`: Adjustments to project configuration files or settings.
+9. `UI/UX`: Changes or enhancements to the user interface or user experience design.
+10. `Localization`: Adds or improves support for additional languages or regional settings.
 
 ### Rejection Reasons
 
 For rejected PRs, please specify the primary reason for rejection, choosing from the following categories:
 
-1. **Inadequate Testing**: The PR lacks necessary tests or has insufficient test coverage.
-2. **Quality Concerns**: The changes raise concerns regarding code quality.
-3. **Functionality Issues**: The PR introduces bugs or breaks existing functionality.
-4. **Design Incompatibility**: The proposed changes do not align with the project's design principles.
-5. **Performance Regression**: The changes result in a degradation of performance.
-6. **Security Vulnerabilities**: The PR introduces or does not adequately address security vulnerabilities.
-7. **Lack of Documentation**: Necessary documentation updates are missing or incomplete.
-8. **Conflict with Project Scope**: The changes are beyond the current project scope or goals.
-9. **Coding Standards Violation**: The PR does not comply with the project's coding standards.
-10. **Dependency Concerns**: The PR introduces compatibility issues, licensing conflicts, or security risks with dependencies.
+1. `Inadequate Testing`: The PR lacks necessary tests or has insufficient test coverage.
+2. `Quality Concerns`: The changes raise concerns regarding code quality.
+3. `Functionality Issues`: The PR introduces bugs or breaks existing functionality.
+4. `Design Incompatibility`: The proposed changes do not align with the project's design principles.
+5. `Performance Regression`: The changes result in a degradation of performance.
+6. `Security Vulnerabilities`: The PR introduces or does not adequately address security vulnerabilities.
+7. `Lack of Documentation`: Necessary documentation updates are missing or incomplete.
+8. `Conflict with Project Scope`: The changes are beyond the current project scope or goals.
+9. `Coding Standards Violation`: The PR does not comply with the project's coding standards.
+10. `Dependency Concerns`: The PR introduces compatibility issues, licensing conflicts, or security risks with dependencies.
 
 ## Questions or Suggestions
 
