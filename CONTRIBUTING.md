@@ -70,10 +70,16 @@ When documenting a PR, select the type that best describes the nature of the con
 
 For rejected PRs, please specify the primary reason for rejection, choosing from the following categories:
 
-- **Non-equivalent functionality**: The proposed changes modify the existing functionality too significantly.
-- **Lack of tests**: The PR fails to include necessary tests or sufficient test coverage.
-- **Coding standards violation**: The changes do not adhere to the project's established coding standards.
-- **Out of project scope**: The PR introduces changes or features that are beyond the current scope or goals of the project.
+1. **Inadequate Testing**: The PR lacks necessary tests or has insufficient test coverage.
+2. **Quality Concerns**: The changes raise concerns regarding code quality.
+3. **Functionality Issues**: The PR introduces bugs or breaks existing functionality.
+4. **Design Incompatibility**: The proposed changes do not align with the project's design principles.
+5. **Performance Regression**: The changes result in a degradation of performance.
+6. **Security Vulnerabilities**: The PR introduces or does not adequately address security vulnerabilities.
+7. **Lack of Documentation**: Necessary documentation updates are missing or incomplete.
+8. **Conflict with Project Scope**: The changes are beyond the current project scope or goals.
+9. **Coding Standards Violation**: The PR does not comply with the project's coding standards.
+10. **Dependency Concerns**: The PR introduces compatibility issues, licensing conflicts, or security risks with dependencies.
 
 ## Questions or Suggestions
 
