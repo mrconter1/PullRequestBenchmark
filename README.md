@@ -2,59 +2,39 @@
 
 ## Introduction
 
-Welcome to PullRequestBenchmark, a new dataset crafted to scrutinize the ability of Large Language Models (LLMs) in accurately approving or rejecting pull requests (PRs) in a manner consistent with human developers. Developed by Rasmus Lindahl, this benchmark aims to bridge the gap between artificial intelligence and software development practices, offering a unique tool to measure the contextual understanding and decision-making prowess of LLMs in real-world coding environments.
+PullRequestBenchmark serves as a comprehensive benchmark designed to evaluate Large Language Models' (LLMs) capability to approve or reject pull requests (PRs) with the same discernment as human reviewers. It is structured around a collection of PRs, each accompanied by all necessary contextual information, challenging LLMs to deliver decisions on approval or rejection. This task mirrors a critical aspect of software development, demanding a deep understanding of code context, quality, and project alignment. Achieving proficiency in this area represents a significant milestone for LLMs, potentially enabling models to not only assess PRs but also generate and select the most appropriate ones based on a given change description. This breakthrough would mark a pivotal step toward leveraging LLMs in enhancing software development and maintenance workflows.
 
-## Project Objective
-
-PullRequestBenchmark seeks to evaluate LLMs' proficiency in considering the entire codebase context, proposed code changes, and PR information (title, description) to make approval or rejection decisions on par with human reviewers. This involves not just technical accuracy but also the comprehension of nuanced aspects like backward compatibility, code quality, and alignment with project goals.
-
-## Dataset Description
-
-The dataset comprises several key attributes for each PR, including:
-
-- **Repository Size**: A measure of the code repository's overall size.
-- **Change Size**: The scope of the proposed changes.
-- **PR Title & Description**: Contextual information outlining the intent and details of the changes.
-- **PR Result**: Indication of whether the PR was approved or rejected.
-- **Rejection Reason**: Detailed feedback on the rationale behind the rejection (if applicable).
-
-## Exclusion Policy
-
-It is crucial that any foundation models trained with this dataset explicitly exclude the repository and its code to prevent any bias or overfitting. This ensures the integrity and the generalizability of the model's decision-making capabilities.
-
-## Benchmark Input and Output
+## Benchmark Format
 
 ### Input to the Model
 
-The model receives comprehensive input designed to mimic the information a human developer would consider when reviewing a pull request (PR). This includes:
+Models are furnished with inputs akin to those a developer would consider, including:
 
-- **Entire Git History**: The complete version control history of the relevant repository, providing context on the project's evolution, coding practices, and previous decisions.
-- **Pull Request Title and Description**: Detailed contextual information that outlines the intent and specifics of the proposed changes, offering insight into what the PR aims to achieve or fix.
-- **Changeset**: The set of changes proposed in the PR, including added, deleted, and modified files. This gives a clear view of what is being introduced or altered in the codebase.
+- **Entire Git History**: Offering a lens into the project's evolution and coding standards.
+- **Pull Request Title and Description**: Providing context and specifics of the proposed changes.
+- **Changeset**: Detailing the exact additions, deletions, and modifications proposed.
 
 ### Expected Output from the Model
 
-The model is expected to deliver a binary decision based on the input provided, reflecting a human-like assessment of the PR. The possible outputs are:
+The output is a binary decision, with the model delivering a verdict akin to a human reviewer's judgment:
 
-- **Approved**: Indicates that the PR meets the project's standards and can be merged into the codebase.
-- **Rejected**: The PR does not meet the necessary criteria for approval. When rejecting a PR, the model should also provide keywords or phrases indicating the primary reason(s) for rejection, such as "insufficient testing," "coding standards violation," or "backward compatibility issues."
+- **Approved**: Signifies the PR aligns with project standards.
+- **Rejected**: Indicates the PR falls short, with reasons for rejection articulated through specific feedback.
 
-This decision-making process emphasizes the model's ability to understand and evaluate code changes in the context of the project's history, goals, and quality standards.
+## How to Contribute
 
-## Contribution Guidelines
+Extending the size of PullRequestBenchmark is greatly appreciated. Your contributions play a vital role in this effort. Here's how you can help:
 
-We welcome contributions from the community, including improvements to the dataset, evaluation methods, or any other resources that could enhance the PullRequestBenchmark. Please follow these steps to contribute:
-
-1. **Fork the Repository**: Make a copy of the project to your GitHub account.
-2. **Make Your Changes**: Implement the improvements or additions.
-3. **Submit a Pull Request**: Open a PR to the main project with a detailed description of your changes.
+1. **Identify Suitable Repositories**: Start by locating repositories that align with the scope of our benchmark.
+2. **Find PRs**: Within these repositories, search for either approved or rejected Pull Requests (PRs) that capture the essence of reviewing.
+3. **Format and Add Evaluation**: Follow our guidelines to document the evaluation data point correctly and add them to our benchmark suite.
 
 For detailed contribution guidelines, please refer to [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Contact
 
-For any inquiries or suggestions regarding the PullRequestBenchmark, please reach out to Rasmus Lindahl at rasmus.lindahl1996@gmail.com.
+For inquiries or suggestions, contact us via email at rasmus.lindahl1996@gmail.com.
 
 ## License
 
-PullRequestBenchmark is open-sourced under the [MIT License](LICENSE). We encourage the use and distribution of this dataset for academic and research purposes, ensuring that advancements in AI and software development are shared and accessible.
+Licensed under the [MIT License](LICENSE), PullRequestBenchmark encourages academic and research use, promoting advancements in AI for software development.
