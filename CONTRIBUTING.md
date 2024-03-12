@@ -11,7 +11,7 @@ The goal is to populate the dataset with both approved and rejected PRs that off
 To find rejected PRs, use the GitHub search feature with the following query parameters:
 
 ```
-is:pr is:closed is:merge
+is:pr is:closed is:unmerged
 ```
 
 Adjust the search by adding specific keywords related to the project or technology you're interested in.
