@@ -30,9 +30,11 @@ Note: The search query might be refined in the future to better target PRs that 
 
 Once you have identified a suitable PR, the next step is to document it for inclusion in the PullRequestBenchmark dataset. Please collect the following information:
 
-- **GitHub PR URL**: Provide the direct link to the PR. Example: `https://github.com/httpie/cli/pull/1178`
-- **Type**: Categorize the PR. Common types include Bugfix, Feature, Improvement, Documentation, etc.
-- **Rejection Reason (if applicable)**: Briefly describe the primary reason for rejection. Example: "Non-equivalent functionality"
+- `GitHub_PR_URL`: The direct URL to the GitHub Pull Request.
+- `Type`: The category of the Pull Request, such as Bugfix, Feature, Improvement, Documentation, Refactoring, etc.
+- `Outcome`: The status of the Pull Request, Approved or Rejected.
+- `RejectionReason`: If applicable, the primary caegory for the rejection of the Pull Request.
+- `Comment`: Additional remarks or context regarding the Pull Request, such as the significance of the contribution or specific aspects of the Pull Request that were notable.
 
 Please ensure that the PR documentation is clear, concise, and free of any personal opinions or subjective interpretations.
 
