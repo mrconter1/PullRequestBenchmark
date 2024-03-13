@@ -1,8 +1,15 @@
 # PullRequestBenchmark
 
-## Introduction
+## Description
 
-PullRequestBenchmark serves as a comprehensive benchmark designed to evaluate Large Language Models' (LLMs) capability to approve or reject pull requests (PRs) with the same discernment as human reviewers. It is structured around a collection of PRs, each accompanied by all necessary contextual information, challenging LLMs to deliver decisions on approval or rejection. This task mirrors a critical aspect of software development, demanding a deep understanding of code context, quality, and project alignment. Achieving proficiency in this area represents a significant milestone for LLMs, potentially enabling models to not only assess PRs but also generate and select the most appropriate ones based on a given change description. This breakthrough would mark a pivotal step toward leveraging LLMs in enhancing software development and maintenance workflows.
+### What Software Developers Do That LLMs Can't (Yet)
+Traditionally, LLMs have focused on generating code, often without fully understanding the collaborative and complex nature of real-world software development. Developers navigate vast codebases, integrating changes that respect both past work and team dynamics—areas where LLMs have room to grow.
+
+### Shifting Perspective from Producing Perfect Code to Identifying It Perfectly
+The PullRequestBenchmark shifts focus towards equipping LLMs with the judgment to accurately approve or reject pull requests. This approach aligns with the evolving needs of software development, emphasizing discernment in code quality over mere creation, and marking a step into an era of long-context intelligence.
+
+### Using PR Review Ability for Self-supervising
+Imagine an LLM that not only critiques but also learns from every piece of code it reviews, evolving into a system capable of generating flawless pull requests. This vision for self-supervised learning in LLMs promises a future where AI contributes deeply to software development, offering a blend of creativity and precision once thought exclusive to human developers.
 
 ## Benchmark Format
 
