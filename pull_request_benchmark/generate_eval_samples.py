@@ -23,9 +23,6 @@ def parse_into_evaluation_samples(data_entries):
         pr_url = entry["GitHub_PR_URL"]
         evaluation_sample = EvaluationSample(pr_url)
         
-        # You may extend the EvaluationSample class to store more information
-        # For now, we'll just work with the URL
-        
         evaluation_samples.append(evaluation_sample)
     
     return evaluation_samples
@@ -36,9 +33,6 @@ def main():
     data_entries = load_dataset_entries(file_path)
     evaluation_samples = parse_into_evaluation_samples(data_entries)
     
-    # Placeholder for future steps - generate benchmark dataset file
-    # for sample in evaluation_samples:
-    #     TODO: Implement functionality to generate benchmark dataset
     
     print(f"Loaded {len(evaluation_samples)} evaluation samples from the dataset.")
 
