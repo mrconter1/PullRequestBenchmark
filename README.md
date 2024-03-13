@@ -1,5 +1,7 @@
 # PullRequestBenchmark
 
+Fellow software engineers, we are **genuinly** at the cusp of making ourselves obsolete through the power of automation! Can't wait to get there.
+
 ## Description
 
 ### What Software Developers Do That LLMs Can't (Yet)
