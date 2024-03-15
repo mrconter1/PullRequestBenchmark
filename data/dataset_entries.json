@@ -19,5 +19,26 @@
     "Outcome": "Rejected",
     "RejectionReason": "Performance Regression",
     "Comment": "A suggestion to improve the performance of toHexString function."
+  },
+  {
+    "GitHub_PR_URL": "https://github.com/minetest/minetest/pull/14413",
+    "Type": "Feature",
+    "Outcome": "Approved",
+    "RejectionReason": "",
+    "Comment": "Add a new toggling for sneaking in a game."
+  },
+  {
+    "GitHub_PR_URL": "https://github.com/minetest/minetest/pull/14379",
+    "Type": "Feature",
+    "Outcome": "Approved",
+    "RejectionReason": "",
+    "Comment": "Enables users to now change game language without restarting application."
+  },
+  {
+    "GitHub_PR_URL": "https://github.com/dwarvesf/hidden/pull/149",
+    "Type": "Localization",
+    "Outcome": "Rejected",
+    "RejectionReason": "Quality Concerns",
+    "Comment": "Attempt to add Croatian language."
   }
 ]
