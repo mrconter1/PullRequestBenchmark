@@ -40,5 +40,12 @@
     "Outcome": "Rejected",
     "RejectionReason": "Quality Concerns",
     "Comment": "Attempt to add Croatian language."
+  },
+  {
+    "GitHub_PR_URL": "https://github.com/alcatraz/Alcatraz/pull/360",
+    "Type": "Dependency Update",
+    "Outcome": "Rejected",
+    "RejectionReason": "Redundant Change",
+    "Comment": "User wants to add support for Xcode 7.1 but it is already supported."
   }
 ]
