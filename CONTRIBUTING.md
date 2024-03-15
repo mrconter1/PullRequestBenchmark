@@ -82,6 +82,7 @@ For rejected PRs, please specify the primary reason for rejection, choosing from
 8. `Conflict with Project Scope`: The changes are beyond the current project scope or goals.
 9. `Coding Standards Violation`: The PR does not comply with the project's coding standards.
 10. `Dependency Concerns`: The PR introduces compatibility issues, licensing conflicts, or security risks with dependencies.
+11. `Redundant Change`: The PR proposes changes or additions that are already implemented, supported, or otherwise rendered unnecessary.
 
 ## Questions or Suggestions
 
