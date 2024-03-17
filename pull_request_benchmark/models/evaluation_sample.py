@@ -1,29 +1,21 @@
 import requests
-from bs4 import BeautifulSoup
 
 class EvaluationSample:
-    def __init__(self, pr_url):
-        self.pr_url = pr_url
-        self.pr_title = self.extract_pr_title(pr_url)
+    
+    def __init__(self, entry):
+        
+        self.pr_info = self.fetch_pr_info(entry)
+
+        self.pr_title = self.pr_info.get('title', '')
+        self.pr_description = self.pr_info.get('body', '')
+        
         print(self.pr_title)
+        print(self.pr_description)
         
-    def extract_pr_title(self, url):
-        response = requests.get(url)
-        soup = BeautifulSoup(response.text, 'html.parser')
-        title_tag = soup.find('bdi', class_='js-issue-title markdown-title')
-        return title_tag.text.strip() if title_tag else 'Title not found'
-        
-    def get_pr_type():
-        return "lol"
-    
-    def get_pr_title():
-        return "lol"    
-    
-    def get_pr_description():
-        return "lol"  
-    
-    def get_pr_diff():
-        return "lol"    
-        
-    def get_pr_outcome():
-        return "rejected"
+    def fetch_pr_info(self, entry):
+        """Fetch PR information as JSON from the GitHub API URL constructed using entry."""
+        url = f"https://api.github.com/repos/{entry['Owner']}/{entry['Repository']}/pulls/{entry['PullRequestId']}"
+        response = requests.get(url, headers={'Accept': 'application/vnd.github.v3+json'})
+        if response.ok:
+            return response.json()
+        return {}

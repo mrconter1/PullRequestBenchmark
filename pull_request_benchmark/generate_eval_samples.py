@@ -20,8 +20,7 @@ def parse_into_evaluation_samples(data_entries):
     """
     evaluation_samples = []
     for entry in data_entries:
-        pr_url = entry["GitHub_PR_URL"]
-        evaluation_sample = EvaluationSample(pr_url)
+        evaluation_sample = EvaluationSample(entry)
         evaluation_samples.append(evaluation_sample)
     
     return evaluation_samples
