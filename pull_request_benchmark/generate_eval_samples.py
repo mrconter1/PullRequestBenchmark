@@ -1,5 +1,5 @@
 import json
-from pull_request_benchmark.models.evaluation_sample import EvaluationSample
+from models.evaluation_sample import EvaluationSample
 
 def load_dataset_entries(file_path):
     """
@@ -22,17 +22,15 @@ def parse_into_evaluation_samples(data_entries):
     for entry in data_entries:
         pr_url = entry["GitHub_PR_URL"]
         evaluation_sample = EvaluationSample(pr_url)
-        
         evaluation_samples.append(evaluation_sample)
     
     return evaluation_samples
 
 def main():
     # Adjust the file path as necessary
-    file_path = '../data/dataset_entries.json'
+    file_path = 'data/dataset_entries.json'
     data_entries = load_dataset_entries(file_path)
     evaluation_samples = parse_into_evaluation_samples(data_entries)
-    
     
     print(f"Loaded {len(evaluation_samples)} evaluation samples from the dataset.")
 
