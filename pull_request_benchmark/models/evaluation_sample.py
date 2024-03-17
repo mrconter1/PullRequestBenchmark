@@ -1,3 +1,6 @@
+from pull_request import PullRequest
+from repository import Repository
+
 class EvaluationSample:
     def __init__(self, pr_url):
         self.pull_request = PullRequest(pr_url)
