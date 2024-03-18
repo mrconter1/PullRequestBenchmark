@@ -1,7 +1,8 @@
+import subprocess
 import requests
 import tempfile
+import shutil
 import os
-import subprocess
 
 class EvaluationSample:
     
@@ -15,28 +16,32 @@ class EvaluationSample:
         self.pr_description = self.pr_info.get('body', '')
         self.pr_diff = self.fetch_pr_patch()
         
-        self.base_sha = self.pr_info.get('base', {}).get('sha', '')
-        self.temp_folder_path = self.create_temp_folder()
-        self.clone_repository(entry['Owner'], entry['Repository'])
-        self.git_log_patch_command = self.generate_git_log_patch_command()
-        self.pr_repository_with_history = self.execute_git_log_patch_command()
+        # Set `self.pr_repository_with_history` by fetching repo history and patch.
+        self.pr_repository_with_history = self.fetch_repo_history_with_patch(entry['Owner'], entry['Repository'])
     
-    def create_temp_folder(self):
-        return tempfile.mkdtemp()
+    def fetch_repo_history_with_patch(self, owner, repository):
+        base_sha = self.pr_info.get('base', {}).get('sha', '')
+        temp_folder_path = tempfile.mkdtemp()
+        
+        self.clone_repository(owner, repository, temp_folder_path)
+        git_log_patch_command = self.generate_git_log_patch_command(base_sha, temp_folder_path)
+        pr_repository_with_history = self.execute_git_log_patch_command(git_log_patch_command, temp_folder_path)
+        
+        return pr_repository_with_history
     
-    def clone_repository(self, owner, repository):
+    def clone_repository(self, owner, repository, temp_folder_path):
         clone_url = f"https://github.com/{owner}/{repository}.git"
-        subprocess.run(['git', 'clone', clone_url, self.temp_folder_path], check=True)
+        subprocess.run(['git', 'clone', clone_url, temp_folder_path], check=True)
     
-    def generate_git_log_patch_command(self):
-        if self.base_sha:
-            return f"git log --patch {self.base_sha}^"
+    def generate_git_log_patch_command(self, base_sha, temp_folder_path):
+        if base_sha:
+            return f"git log --patch {base_sha}^", temp_folder_path
         else:
-            return "Base commit SHA not found"
+            return "Base commit SHA not found", temp_folder_path
     
-    def execute_git_log_patch_command(self):
-        if self.base_sha:
-            process = subprocess.Popen(self.git_log_patch_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=self.temp_folder_path)
+    def execute_git_log_patch_command(self, git_log_patch_command, temp_folder_path):
+        if git_log_patch_command != "Base commit SHA not found":
+            process = subprocess.Popen(git_log_patch_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=temp_folder_path)
             stdout, stderr = process.communicate()
             return stdout.decode('utf-8', errors='replace')
         else:
