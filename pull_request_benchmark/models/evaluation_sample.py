@@ -38,10 +38,16 @@ class EvaluationSample:
             return "Base commit SHA not found", temp_folder_path
     
     def execute_git_log_patch_command(self, git_log_patch_command, temp_folder_path):
-        if git_log_patch_command != "Base commit SHA not found":
-            process = subprocess.Popen(git_log_patch_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=temp_folder_path)
-            stdout, stderr = process.communicate()
-            return stdout.decode('utf-8', errors='replace')
+        data_txt_path = os.path.join(temp_folder_path, 'data.txt')  # Define the path for data.txt
+        if git_log_patch_command[0] != "Base commit SHA not found":
+            # Modify the command to redirect output to data.txt
+            full_command = f"{git_log_patch_command[0]} > data.txt"
+            # Execute the command, ensuring we're in the correct directory
+            subprocess.run(full_command, shell=True, check=True, cwd=temp_folder_path)
+            # Read the content of data.txt into a variable
+            with open(data_txt_path, 'r', encoding='utf-8') as file:
+                git_history = file.read()
+            return git_history
         else:
             return "Base commit SHA not found"
         
