@@ -29,3 +29,15 @@ def load_evaluation_samples():
         evaluation_samples.append(evaluation_sample)
     
     return evaluation_samples
+
+def print_estimated_prompt_sizes(evaluation_samples):
+    # Header for the output to make it clear and readable
+    print(f"{'PR Title':<50} | {'Estimated Prompt Size (tokens)':>30}")
+    print("-" * 85)  # Separator line for clarity
+
+    for sample in evaluation_samples:
+        pr_title = sample.pr_title
+        prompt_length_in_tokens = sample.get_estimated_number_of_tokens()
+
+        # Print each PR title and its estimated prompt size in tokens, formatted nicely
+        print(f"{pr_title:<50} | {prompt_length_in_tokens:30.2f}")

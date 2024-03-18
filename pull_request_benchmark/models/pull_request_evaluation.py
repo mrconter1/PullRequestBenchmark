@@ -39,6 +39,17 @@ class PullRequestEvaluation:
             "Reason: ''/'Reason for rejection'"
         )
         return template_str
+    
+    def get_estimated_number_of_tokens(self):
+        """
+        Estimates the number of tokens for evaluation sample.
+
+        Returns:
+        - int: The estimated number of tokens in the prompt, rounded down.
+        """
+        prompt_length = len(self.get_prompt())
+        estimated_tokens = prompt_length / 4.5  # Estimate the token count based on the length of the prompt
+        return int(estimated_tokens)  # Convert to integer, rounding down
 
     def format_rejection_reasons(self):
         return '\n'.join([f"- {reason}" for reason in self.available_rejection_reasons])

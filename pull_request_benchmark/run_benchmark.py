@@ -1,5 +1,5 @@
 import llms
-from evaluations_collection import load_evaluation_samples
+from evaluations_collection import *
 
 def initialize_llm(api_key, model='gpt-4'):
     """
