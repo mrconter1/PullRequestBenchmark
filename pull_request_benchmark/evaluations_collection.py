@@ -1,6 +1,5 @@
 import json
-from models.evaluation_sample import EvaluationSample
-from evaluation_prompt import EvaluationPrompt
+from models.pull_request_evaluation import PullRequestEvaluation
 
 def load_dataset_entries(file_path):
     """
@@ -12,29 +11,21 @@ def load_dataset_entries(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
 
-def parse_into_evaluation_samples(data_entries):
+def load_evaluation_samples():
     """
     Parses JSON data entries into EvaluationSample objects.
     
     :param data_entries: A list of dictionary entries representing PR data points.
     :return: A list of EvaluationSample objects.
     """
-    evaluation_samples = []
-    for entry in data_entries:
-        evaluation_sample = EvaluationSample(entry)
-        evaluation_sample.load()
-        evaluation_samples.append(evaluation_sample)
-        break
     
-    return evaluation_samples
-
-def main():
-    # Adjust the file path as necessary
     file_path = 'data/dataset_entries.json'
     data_entries = load_dataset_entries(file_path)
-    evaluation_samples = parse_into_evaluation_samples(data_entries)
     
-    print(f"Loaded {len(evaluation_samples)} evaluation samples from the dataset.")
-
-if __name__ == "__main__":
-    main()
+    evaluation_samples = []
+    for entry in data_entries:
+        evaluation_sample = PullRequestEvaluation(entry)
+        evaluation_sample.load()
+        evaluation_samples.append(evaluation_sample)
+    
+    return evaluation_samples
