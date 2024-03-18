@@ -1,0 +1,59 @@
+{
+    "rejectionReasons": [
+      {
+        "id": 1,
+        "description": "Inadequate Testing",
+        "detail": "The PR lacks necessary tests or has insufficient test coverage."
+      },
+      {
+        "id": 2,
+        "description": "Quality Concerns",
+        "detail": "The changes raise concerns regarding code quality."
+      },
+      {
+        "id": 3,
+        "description": "Functionality Issues",
+        "detail": "The PR introduces bugs or breaks existing functionality."
+      },
+      {
+        "id": 4,
+        "description": "Design Incompatibility",
+        "detail": "The proposed changes do not align with the project's design principles."
+      },
+      {
+        "id": 5,
+        "description": "Performance Regression",
+        "detail": "The changes result in a degradation of performance."
+      },
+      {
+        "id": 6,
+        "description": "Security Vulnerabilities",
+        "detail": "The PR introduces or does not adequately address security vulnerabilities."
+      },
+      {
+        "id": 7,
+        "description": "Lack of Documentation",
+        "detail": "Necessary documentation updates are missing or incomplete."
+      },
+      {
+        "id": 8,
+        "description": "Conflict with Project Scope",
+        "detail": "The changes are beyond the current project scope or goals."
+      },
+      {
+        "id": 9,
+        "description": "Coding Standards Violation",
+        "detail": "The PR does not comply with the project's coding standards."
+      },
+      {
+        "id": 10,
+        "description": "Dependency Concerns",
+        "detail": "The PR introduces compatibility issues, licensing conflicts, or security risks with dependencies."
+      },
+      {
+        "id": 11,
+        "description": "Redundant Change",
+        "detail": "The PR proposes changes or additions that are already implemented, supported, or otherwise rendered unnecessary."
+      }
+    ]
+  }  

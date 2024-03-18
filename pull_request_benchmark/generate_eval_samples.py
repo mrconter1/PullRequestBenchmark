@@ -1,5 +1,6 @@
 import json
 from models.evaluation_sample import EvaluationSample
+from evaluation_prompt import EvaluationPrompt
 
 def load_dataset_entries(file_path):
     """
@@ -23,6 +24,7 @@ def parse_into_evaluation_samples(data_entries):
         evaluation_sample = EvaluationSample(entry)
         evaluation_sample.load()
         evaluation_samples.append(evaluation_sample)
+        break
     
     return evaluation_samples
 
@@ -31,6 +33,10 @@ def main():
     file_path = 'data/dataset_entries.json'
     data_entries = load_dataset_entries(file_path)
     evaluation_samples = parse_into_evaluation_samples(data_entries)
+    
+    t = EvaluationPrompt(evaluation_samples[0])
+    
+    print(t.generate_prompt())
     
     print(f"Loaded {len(evaluation_samples)} evaluation samples from the dataset.")
 
