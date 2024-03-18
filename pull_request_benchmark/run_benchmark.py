@@ -9,14 +9,15 @@ def initialize_llm(api_key, model='gpt-4'):
 
 def evaluate_model(model, evaluation_samples):
     """
-    Sends evaluation prompts to the LLM and checks responses against the correct answers.
+    Sends evaluation prompts to the LLM and checks if responses contain the specified review outcomes.
     """
     correct_responses = 0
     for sample in evaluation_samples:
         prompt = sample.get_prompt()
         response = model.complete(prompt)
-        correct_answer = sample.correct_answer # You need to define how to access the correct answer within your EvaluationSample class or dataset
-        if response.text.strip() == correct_answer.strip():
+        review_outcome = sample.review_outcome # Adjusted to access the review_outcome field
+        # Check if the review_outcome is contained within the response
+        if review_outcome.strip().lower() in response.text.strip().lower():
             correct_responses += 1
     
     success_rate = correct_responses / len(evaluation_samples) * 100
