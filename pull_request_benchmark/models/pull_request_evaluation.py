@@ -10,6 +10,8 @@ class PullRequestEvaluation:
         self.api_url = f"https://api.github.com/repos/{entry['Owner']}/{entry['Repository']}/pulls/{entry['PullRequestId']}"
         self.entry = entry
         self.rejection_reasons_file_path = 'data/rejection_reasons.json'
+        self.review_outcome = entry['Outcome']
+        self.rejection_reason = entry['RejectionReason']
         
     def load(self):
         self.pr_info = self.fetch_pr_info()
