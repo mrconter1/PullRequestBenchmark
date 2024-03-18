@@ -1,11 +1,11 @@
-#import llms
+import llms
 from evaluations_collection import load_evaluation_samples
 
 def initialize_llm(api_key, model='gpt-4'):
     """
     Initializes and returns a language model instance using PyLLMs.
     """
-    #return llms.init(api_key=api_key, model=model)
+    return llms.init(api_key=api_key, model=model)
 
 def evaluate_model(model, evaluation_samples):
     """
