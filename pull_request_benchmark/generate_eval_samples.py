@@ -21,6 +21,7 @@ def parse_into_evaluation_samples(data_entries):
     evaluation_samples = []
     for entry in data_entries:
         evaluation_sample = EvaluationSample(entry)
+        evaluation_sample.load()
         evaluation_samples.append(evaluation_sample)
     
     return evaluation_samples

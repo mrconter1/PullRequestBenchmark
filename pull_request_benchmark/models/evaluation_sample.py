@@ -7,17 +7,15 @@ import os
 class EvaluationSample:
     
     def __init__(self, entry):
-        
         self.api_url = f"https://api.github.com/repos/{entry['Owner']}/{entry['Repository']}/pulls/{entry['PullRequestId']}"
+        self.entry = entry
         
+    def load(self):
         self.pr_info = self.fetch_pr_info()
-
         self.pr_title = self.pr_info.get('title', '')
         self.pr_description = self.pr_info.get('body', '')
         self.pr_diff = self.fetch_pr_patch()
-        
-        # Set `self.pr_repository_with_history` by fetching repo history and patch.
-        self.pr_repository_with_history = self.fetch_repo_history_with_patch(entry['Owner'], entry['Repository'])
+        self.pr_repository_with_history = self.fetch_repo_history_with_patch(self.entry['Owner'], self.entry['Repository'])
     
     def fetch_repo_history_with_patch(self, owner, repository):
         base_sha = self.pr_info.get('base', {}).get('sha', '')
