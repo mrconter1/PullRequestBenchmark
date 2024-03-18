@@ -80,7 +80,7 @@ class PullRequestEvaluation:
             # Execute the command, ensuring we're in the correct directory
             subprocess.run(full_command, shell=True, check=True, cwd=temp_folder_path)
             # Read the content of data.txt into a variable
-            with open(data_txt_path, 'r', encoding='utf-8') as file:
+            with open(data_txt_path, 'r', encoding='utf-8', errors='ignore') as file:
                 git_history = file.read()
             return git_history
         else:
