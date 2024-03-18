@@ -38,7 +38,7 @@ class EvaluationSample:
         if self.base_sha:
             process = subprocess.Popen(self.git_log_patch_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=self.temp_folder_path)
             stdout, stderr = process.communicate()
-            return stdout.decode()
+            return stdout.decode('utf-8', errors='replace')
         else:
             return "Base commit SHA not found"
         
