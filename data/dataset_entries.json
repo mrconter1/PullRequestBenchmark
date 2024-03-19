@@ -61,5 +61,14 @@
     "Outcome": "Rejected",
     "RejectionReason": "Quality Concerns",
     "Comment": "The PR attempts to add support for accessing mobile authenticated content on Steam."
+  },
+  {
+    "Owner": "holepunchto",
+    "Repository": "hyperswarm",
+    "PullRequestId": 146,
+    "Type": "Improvement",
+    "Outcome": "Approved",
+    "RejectionReason": "",
+    "Comment": "Add methods for suspending and resuming swarms in the p2p network."
   }
 ]
