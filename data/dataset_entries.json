@@ -52,5 +52,14 @@
     "Outcome": "Rejected",
     "RejectionReason": "Redundant Change",
     "Comment": "User wants to add support for Xcode 7.1 but it is already supported."
+  },
+  {
+    "Owner": "ValvePython",
+    "Repository": "steam",
+    "PullRequestId": 34,
+    "Type": "Feature",
+    "Outcome": "Rejected",
+    "RejectionReason": "Quality Concerns",
+    "Comment": "The PR attempts to add support for accessing mobile authenticated content on Steam."
   }
 ]
