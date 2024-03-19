@@ -115,5 +115,23 @@
     "Outcome": "Approved",
     "RejectionReason": "Design Incompatibility",
     "Comment": "Use more safe IO operations for file interactions."
+  },
+  {
+    "Owner": "sindresorhus",
+    "Repository": "cli-spinners",
+    "PullRequestId": 53,
+    "Type": "Refactoring",
+    "Outcome": "Rejected",
+    "RejectionReason": "Performance Regression",
+    "Comment": "Modularize the existing codebase by refactoring it into several modules."
+  },
+  {
+    "Owner": "sindresorhus",
+    "Repository": "cli-spinners",
+    "PullRequestId": 44,
+    "Type": "Improvement",
+    "Outcome": "Approved",
+    "RejectionReason": "",
+    "Comment": "Added a new spinner animation to the project."
   }
 ]
