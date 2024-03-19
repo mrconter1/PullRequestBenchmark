@@ -40,6 +40,10 @@ Extending the size of PullRequestBenchmark is greatly appreciated. Your contribu
 
 For detailed contribution guidelines, please refer to [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Prompt Size and Distribution
+
+The PullRequestBenchmark encompasses a wide range of prompt sizes, reflecting the diversity of real-world software development scenarios. Prompt sizes, measured in tokens, vary significantly, with the smallest being around 125,506 tokens and the largest exceeding 49,015,233 tokens. This variation underscores the benchmark's comprehensive approach to evaluating LLMs across simple to complex pull request reviews. The distribution of prompt sizes illustrates the challenges in software development tasks, ranging from minor code tweaks to substantial feature additions or optimizations.
+
 ## Contact
 
 For inquiries or suggestions, contact us via email at rasmus.lindahl1996@gmail.com.
