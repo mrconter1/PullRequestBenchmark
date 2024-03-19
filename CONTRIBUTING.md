@@ -26,17 +26,17 @@ is:pr is:closed is:merged
 
 Note: The search query might be refined in the future to better target PRs that meet our criteria.
 
-## Documenting PRs
+## Dataset Structure
 
-Once you have identified a suitable PR, the next step is to document it for inclusion in the PullRequestBenchmark dataset. Please collect the following information:
+Each PR entry in this dataset includes detailed documentation organized as follows:
 
-- `GitHub_PR_URL`: The direct URL to the GitHub Pull Request.
-- `Type`: The category of the Pull Request, such as Bugfix, Feature, Improvement, Documentation, Refactoring, etc.
-- `Outcome`: The status of the Pull Request, Approved or Rejected.
-- `RejectionReason`: If applicable, the primary caegory for the rejection of the Pull Request.
-- `Comment`: Additional remarks or context regarding the Pull Request, such as the significance of the contribution or specific aspects of the Pull Request that were notable.
-
-Please ensure that the PR documentation is clear, concise, and free of any personal opinions or subjective interpretations.
+1. **Owner**: The GitHub username or organization name of the repository owner.
+2. **Repository**: The name of the repository where the PR was submitted.
+3. **PullRequestId**: The unique identifier of the Pull Request on GitHub.
+4. **Type**: The category of the Pull Request (e.g., Bugfix, Feature, Improvement, Documentation, Refactoring, Localization, Dependency Update).
+5. **Outcome**: The final status of the Pull Request (Approved or Rejected).
+6. **RejectionReason**: The primary reason for the PR's rejection, if applicable.
+7. **Comment**: Additional remarks providing context or notable aspects of the Pull Request.
 
 ## Submitting Your Contribution
 

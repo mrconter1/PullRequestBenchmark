@@ -70,5 +70,14 @@
     "Outcome": "Approved",
     "RejectionReason": "",
     "Comment": "Add methods for suspending and resuming swarms in the p2p network."
+  },
+  {
+    "Owner": "nst",
+    "Repository": "STTwitter",
+    "PullRequestId": 270,
+    "Type": "Improvement",
+    "Outcome": "Rejected",
+    "RejectionReason": "Redundant Change",
+    "Comment": "Tried to add extended retrieval of twitter posts but that funtionally was already present."
   }
 ]
