@@ -79,5 +79,23 @@
     "Outcome": "Rejected",
     "RejectionReason": "Redundant Change",
     "Comment": "Tried to add extended retrieval of twitter posts but that funtionally was already present."
+  },
+  {
+    "Owner": "FNA-XNA",
+    "Repository": "FNA",
+    "PullRequestId": 315,
+    "Type": "Improvement",
+    "Outcome": "Rejected",
+    "RejectionReason": "Performance Regression",
+    "Comment": "Attempt to simplify DllMap reimplementation by dynamically loading CoreDllMap assembly."
+  },
+  {
+    "Owner": "FNA-XNA",
+    "Repository": "FNA",
+    "PullRequestId": 452,
+    "Type": "Improvement",
+    "Outcome": "Approved",
+    "RejectionReason": "",
+    "Comment": "Switched to weak GCHandles for resource management, enhancing efficiency."
   }
 ]
