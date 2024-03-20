@@ -4,7 +4,7 @@ Fellow software engineers, we are **genuinly** at the cusp of making ourselves o
 
 ## Gauging Progress Towards Programming Automation
 
-The journey towards automating the programming profession as we know it today is both fascinating and crucial. Here lies the core of our motivation for using Large Language Models (LLMs) to review pull requests (PRs) as a proxy for this significant transition.
+The journey towards automating the programming profession as we know it today is both fascinating and crucial. Here lies the core of our motivation for using Large Language Models (LLMs) to review pull requests (PRs) as a proxy for this significant transition. This effort might seem similar to SWE-benchmark at first glance, but there are [key differences](#PullRequestBenchmark-vs-SWE-bench).
 
 1. **PR Review Skill Evaluation is Easier Than PR Creation Skill Assessment**: Assessing LLMs' PR review skills simplifies the evaluation process by allowing direct comparisons to human expert responses, focusing on the nuanced decision-making involved in software development.
 
@@ -52,3 +52,15 @@ For inquiries or suggestions, contact us via email at rasmus.lindahl1996@gmail.c
 ## License
 
 Licensed under the [MIT License](LICENSE), PullRequestBenchmark encourages academic and research use, promoting advancements in AI for software development.
+
+-------------------------------------
+
+## PullRequestBenchmark vs. SWE-bench
+
+- **Focus**: PullRequestBenchmark evaluates LMs on reviewing pull requests to ensure they align with project standards. SWE-bench tests LMs' ability to solve real-world GitHub issues by generating fixes that pass unit tests.
+  
+- **Objective**: PullRequestBenchmark aims at decision-making in PR reviews, emphasizing quality assurance. SWE-bench focuses on problem-solving, specifically generating solutions for issues.
+
+- **Evaluation**: PullRequestBenchmark assesses binary decision-making (approve or reject) on PRs. SWE-bench measures success by whether generated solutions resolve issues, validated through unit tests.
+
+- **Inputs**: PullRequestBenchmark evaluates the reviewing of PRs, incorporating the full Git history and PR details to support these assessments. SWE-bench, focusing on code creation, considers only the current state of the repository through Issue-PR pairs.
