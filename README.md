@@ -2,9 +2,7 @@
 
 Fellow software engineers, we are **genuinly** at the cusp of making ourselves obsolete through the power of automation! Can't wait to get there.
 
-## Motivation
-
-## Motivation: Gauging Progress Towards Programming Automation
+## Gauging Progress Towards Programming Automation
 
 The journey towards automating the programming profession as we know it today is both fascinating and crucial. Here lies the core of our motivation for using Large Language Models (LLMs) to review pull requests (PRs) as a proxy for this significant transition.
 
