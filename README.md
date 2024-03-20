@@ -14,17 +14,6 @@ The journey towards automating the programming profession as we know it today is
 
 4. **Code Review Benchmarks Tracks Progress Toward Programming Automation**: Creating a benchmark for LLMs' code review abilities offers a clear method to track progress towards fully automating programming, providing tangible milestones on this transformative journey.
 
-## Description
-
-### What Software Developers Do That LLMs Can't (Yet)
-Traditionally, LLMs have focused on generating code, often without fully understanding the collaborative and complex nature of real-world software development. Developers navigate vast codebases, integrating changes that respect both past work and team dynamics—areas where LLMs have room to grow.
-
-### Shifting Perspective from Producing Perfect Code to Identifying It Perfectly
-The PullRequestBenchmark shifts focus towards equipping LLMs with the judgment to accurately approve or reject pull requests. This approach aligns with the evolving needs of software development, emphasizing discernment in code quality over mere creation, and marking a step into an era of long-context intelligence.
-
-### Using PR Review Ability for Self-supervising
-Imagine an LLM that not only critiques but also learns from every piece of code it reviews, evolving into a system capable of generating flawless pull requests. This vision for self-supervised learning in LLMs promises a future where AI contributes deeply to software development, offering a blend of creativity and precision once thought exclusive to human developers.
-
 ## Benchmark Format
 
 ### Input to the Model
