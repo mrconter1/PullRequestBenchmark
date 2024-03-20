@@ -2,6 +2,20 @@
 
 Fellow software engineers, we are **genuinly** at the cusp of making ourselves obsolete through the power of automation! Can't wait to get there.
 
+## Motivation
+
+## Motivation: Gauging Progress Towards Programming Automation
+
+The journey towards automating the programming profession as we know it today is both fascinating and crucial. Here lies the core of our motivation for using Large Language Models (LLMs) to review pull requests (PRs) as a proxy for this significant transition.
+
+1. **PR Review Skill Evaluation is Easier Than PR Creation Skill Assessment**: Assessing LLMs' PR review skills simplifies the evaluation process by allowing direct comparisons to human expert responses, focusing on the nuanced decision-making involved in software development.
+
+2. **Complex PR Review Capabilities Imply Complex PR Creation Capability**: If LLMs can expertly review and make decisions on complex PRs—covering major refactoring, architecture redesigns, large feature additions, intricate bug fixes, or advanced security measures—it suggests they might also be capable of creating high-quality PRs, heralding a new era of automation.
+
+3. **Autonomous Complex PR Generation Could Eliminate Traditional Programmer Roles**: The ability of LLMs to autonomously generate complex PRs for projects as intricate as the Linux kernel may redefine or even phase out the traditional concept of a "programmer," shifting the landscape of software development.
+
+4. **Code Review Benchmarks Tracks Progress Toward Programming Automation**: Creating a benchmark for LLMs' code review abilities offers a clear method to track progress towards fully automating programming, providing tangible milestones on this transformative journey.
+
 ## Description
 
 ### What Software Developers Do That LLMs Can't (Yet)
