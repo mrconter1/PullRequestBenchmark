@@ -2,9 +2,11 @@
 
 Fellow software engineers, we are **genuinly** at the cusp of making ourselves obsolete through the power of automation! Can't wait to get there.
 
+This effort might seem similar to [SWE-bench](https://www.swebench.com/) at first glance, but there are [key differences](#PullRequestBenchmark-vs-SWE-bench).
+
 ## Gauging Progress Towards Programming Automation
 
-The journey towards automating the programming profession as we know it today is both fascinating and crucial. Here lies the core of our motivation for using LLMs to review PRs as a proxy for this significant transition. This effort might seem similar to [SWE-bench](https://www.swebench.com/) at first glance, but there are [key differences](#PullRequestBenchmark-vs-SWE-bench).
+The journey towards automating the programming profession as we know it today is both fascinating and crucial. Here lies the core of our motivation for using LLMs to review PRs as a proxy for this significant transition.
 
 1. **PR Review Skill Evaluation is Easier Than PR Creation Skill Assessment**: Assessing LLMs' PR review skills simplifies the evaluation process by allowing direct comparisons to human expert responses, focusing on the nuanced decision-making involved in software development.
 
