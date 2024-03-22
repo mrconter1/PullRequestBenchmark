@@ -4,7 +4,7 @@ Fellow software engineers, we are **genuinly** at the cusp of making ourselves o
 
 This effort might seem similar to [SWE-bench](https://www.swebench.com/) at first glance, but there are [key differences](#PullRequestBenchmark-vs-SWE-bench).
 
-## Gauging Progress Towards Programming Automation
+## Expert PR reviewers are likely expert PR creators
 
 The journey towards automating the programming profession as we know it today is both fascinating and crucial. Here lies the core of our motivation for using LLMs to review PRs as a proxy for this significant transition.
 
