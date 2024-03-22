@@ -10,7 +10,7 @@ The journey towards automating the programming profession as we know it today is
 
 1. **PR Review Skill Evaluation is Easier Than PR Creation Skill Assessment**: Assessing LLMs' PR review skills simplifies the evaluation process by allowing direct comparisons to human expert responses, focusing on the nuanced decision-making involved in software development.
 
-2. **Complex PR Review Capabilities Imply Complex PR Creation Capability**: If LLMs can expertly review and make decisions on complex PRs—covering major refactoring, architecture redesigns, large feature additions, intricate bug fixes, or advanced security measures—it implies they might also be capable of creating complex high-quality PRs.
+2. **Complex PR Review Capabilities Imply Complex PR Creation Capability**: If LLMs can expertly review and make decisions on complex PRs—covering major refactoring, architecture redesigns, large feature additions, intricate bug fixes, or advanced security measures—it implies that they are also capable of creating complex high-quality PRs.
 
 3. **Autonomous Complex PR Generation Could Eliminate Traditional Programmer Roles**: The ability of LLMs to autonomously generate complex PRs for projects as intricate as the Linux kernel may redefine or even phase out the traditional concept of a "programmer," shifting the landscape of software development.
 
