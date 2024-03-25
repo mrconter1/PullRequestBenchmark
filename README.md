@@ -1,6 +1,6 @@
 # PullRequestBenchmark
 
-Fellow software engineers, we are **genuinly** at the cusp of making ourselves obsolete through the power of automation! Can't wait to get there.
+Fellow software engineers, we are **genuinely** at the cusp of making ourselves obsolete through the power of automation! Can't wait to get there.
 
 This effort might seem similar to [SWE-bench](https://www.swebench.com/) at first glance, but there are [key differences](#PullRequestBenchmark-vs-SWE-bench).
 
