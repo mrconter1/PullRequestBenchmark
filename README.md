@@ -8,15 +8,23 @@ This effort might seem similar to [SWE-bench](https://www.swebench.com/) at firs
 
 The journey towards automating the programming profession as we know it today is both fascinating and crucial. Here lies the core of our motivation for using LLMs to review PRs as a proxy for this significant transition.
 
-1. **Expertise in PR Review Capabilities Equates to Expertise in PR Creation Capability**
+Your format looks quite clear and well-organized already. However, if you want to adhere strictly to APA style formatting for each Assertion and Argument, you could format it as follows:
 
-    a. **Intuitive Argument (Competence Argument)**: If LLMs can expertly review and make decisions on complex PRs—covering major refactoring, architecture redesigns, large feature additions, intricate bug fixes, or advanced security measures—it intuitively implies that they are also capable of creating complex high-quality PRs. The understanding, analysis, and judgment required to review such PRs would necessarily entail the ability to create them.
+1. **Assertion: Expertise in PR Review Capabilities Equates to Expertise in PR Creation Capability**
 
-    b. **Logical Argument (Bootstrap Argument)**: Leveraging LLMs' expert review skills, even initially basic PRs could be iteratively generated and refined. This process of self-evaluation and improvement, akin to bootstrapping, could potentially lead to the creation of high-quality, human-level PRs over time.
+    a. *Intuitive Argument (Competence Argument)*: If LLMs can expertly review and make decisions on complex PRs—covering major refactoring, architecture redesigns, large feature additions, intricate bug fixes, or advanced security measures—it intuitively implies that they are also capable of creating complex high-quality PRs. The understanding, analysis, and judgment required to review such PRs would necessarily entail the ability to create them.
 
-2. **PR Review Skill Evaluation is Easier Than PR Creation Skill Assessment**: Assessing LLMs' PR review skills simplifies the evaluation process by allowing direct comparisons to human expert responses, focusing on the nuanced decision-making involved in software development.
+    b. *Logical Argument (Bootstrap Argument)*: Leveraging LLMs' expert review skills, even initially basic PRs could be iteratively generated and refined. This process of self-evaluation and improvement, akin to bootstrapping, could potentially lead to the creation of high-quality, human-level PRs over time.
 
-3. **Code Review Benchmarks Tracks Progress Toward Traditional Programming Role Obsolescence**: By measuring the code review capabilities of LLMs using benchmarks, we can track advancements towards automating traditional programming roles in a tangible way. The ability of LLMs to generate complex pull requests autonomously implies a potential obsolescence of traditional programmer roles, signaling a transformation in the software development industry.
+2. **Assertion: PR Review Skill Evaluation is Easier Than PR Creation Skill Assessment**
+
+    Assessing LLMs' PR review skills simplifies the evaluation process by allowing direct comparisons to human expert responses, focusing on the nuanced decision-making involved in software development.
+
+3. **Assertion: Code Review Benchmarks Tracks Progress Toward Traditional Programming Role Obsolescence**
+
+    By measuring the code review capabilities of LLMs using benchmarks, we can track advancements towards automating traditional programming roles in a tangible way. The ability of LLMs to generate complex pull requests autonomously implies a potential obsolescence of traditional programmer roles, signaling a transformation in the software development industry.
+
+Here, the main assertions are bolded and numbered, and the supporting arguments are indented and italicized for emphasis and clarity.
 
 ## Benchmark Format
 
