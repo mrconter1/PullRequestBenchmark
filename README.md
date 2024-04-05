@@ -18,7 +18,7 @@ The journey towards automating the programming profession as we know it today is
 
     Assessing LLMs' PR review skills simplifies the evaluation process by allowing direct comparisons to human expert responses, focusing on the nuanced decision-making involved in software development.
 
-3. **Argument: If Both Previous Assertions Are Assumed to be True, Code Review Benchmarks Could Indicate Progress Toward Traditional Programming Role Obsolescence**
+3. **Argument: Code Review Benchmarks Can Indicate Progress Toward Traditional Programming Role Obsolescence**
 
     If we accept the validity of both the first and second assertions, measuring the code review capabilities of LLMs using benchmarks could help us track advancements towards automating traditional programming roles. The ability of LLMs to generate complex pull requests autonomously would then imply a potential obsolescence of traditional programmer roles, signaling a transformation in the software development industry.
 
