@@ -6,7 +6,7 @@ This effort might seem similar to [SWE-bench](https://www.swebench.com/) at firs
 
 ## Expert PR reviewers are likely expert PR creators
 
-The journey towards automating the programming profession as we know it today is both fascinating and crucial. Here lies the core of our motivation for using LLMs to review PRs as a proxy for this significant transition.
+The journey towards automating the programming profession as we know it today is both exciting and vitally important. This is the heart of our motivation for leveraging Large Language Models (LLMs) to review PRs (Pull Requests) as a representative step in this significant transition.
 
 1. **Assertion: Expertise in PR Review Capabilities Equates to Expertise in PR Creation Capability**
 
