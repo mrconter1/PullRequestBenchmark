@@ -16,9 +16,7 @@ The journey towards automating the programming profession as we know it today is
 
 2. **PR Review Skill Evaluation is Easier Than PR Creation Skill Assessment**: Assessing LLMs' PR review skills simplifies the evaluation process by allowing direct comparisons to human expert responses, focusing on the nuanced decision-making involved in software development.
 
-3. **Autonomous Complex PR Generation Could Eliminate Traditional Programmer Roles**: The ability of LLMs to autonomously generate complex PRs for projects as intricate as the Linux kernel may redefine or even phase out the traditional concept of a "programmer," shifting the landscape of software development.
-
-4. **Code Review Benchmarks Tracks Progress Toward Programming Automation**: Creating a benchmark for LLMs' code review abilities offers a clear method to track progress towards fully automating programming, providing tangible milestones on this transformative journey.
+3. **Code Review Benchmarks Tracks Progress Toward Traditional Programming Role Obsolescence**: By measuring the code review capabilities of LLMs using benchmarks, we can track advancements towards automating traditional programming roles in a tangible way. The ability of LLMs to generate complex pull requests autonomously implies a potential obsolescence of traditional programmer roles, signaling a transformation in the software development industry.
 
 ## Benchmark Format
 
