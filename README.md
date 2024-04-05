@@ -8,7 +8,11 @@ This effort might seem similar to [SWE-bench](https://www.swebench.com/) at firs
 
 The journey towards automating the programming profession as we know it today is both fascinating and crucial. Here lies the core of our motivation for using LLMs to review PRs as a proxy for this significant transition.
 
-1. **Complex PR Review Capabilities Imply Complex PR Creation Capability**: If LLMs can expertly review and make decisions on complex PRs—covering major refactoring, architecture redesigns, large feature additions, intricate bug fixes, or advanced security measures—it implies that they are also capable of creating complex high-quality PRs.
+1. **Complex PR Review Capabilities Imply PR Creation Capability**
+
+    a. **Intuitive Argument (Competence Argument)**: If LLMs can expertly review and make decisions on complex PRs—covering major refactoring, architecture redesigns, large feature additions, intricate bug fixes, or advanced security measures—it intuitively implies that they are also capable of creating complex high-quality PRs. The understanding, analysis, and judgment required to review such PRs would necessarily entail the ability to create them.
+
+    b. **Logical Argument (Bootstrap Argument)**: Leveraging LLMs' expert review skills, even initially basic PRs could be iteratively generated and refined. This process of self-evaluation and improvement, akin to bootstrapping, could potentially lead to the creation of high-quality, human-level PRs over time.
 
 2. **PR Review Skill Evaluation is Easier Than PR Creation Skill Assessment**: Assessing LLMs' PR review skills simplifies the evaluation process by allowing direct comparisons to human expert responses, focusing on the nuanced decision-making involved in software development.
 
