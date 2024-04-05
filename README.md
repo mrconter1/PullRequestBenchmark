@@ -8,7 +8,7 @@ This effort might seem similar to [SWE-bench](https://www.swebench.com/) at firs
 
 The journey towards automating the programming profession as we know it today is both fascinating and crucial. Here lies the core of our motivation for using LLMs to review PRs as a proxy for this significant transition.
 
-1. **Complex PR Review Capabilities Imply PR Creation Capability**
+1. **Expertise in PR Review Capabilities Equates to Expertise in PR Creation Capability**
 
     a. **Intuitive Argument (Competence Argument)**: If LLMs can expertly review and make decisions on complex PRs—covering major refactoring, architecture redesigns, large feature additions, intricate bug fixes, or advanced security measures—it intuitively implies that they are also capable of creating complex high-quality PRs. The understanding, analysis, and judgment required to review such PRs would necessarily entail the ability to create them.
 
