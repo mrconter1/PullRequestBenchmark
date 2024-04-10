@@ -2,6 +2,8 @@
 
 Fellow software engineers, we are **genuinely** at the cusp of making ourselves obsolete through the power of automation! Can't wait to get there.
 
+PullRequestBenchmark evaluates AI decisively using binary PR feedback, effectively addressing the challenges of subjective quality assessment in code generation and indicating a clear path towards automating comprehensive programming roles.
+
 This effort might seem similar to [SWE-bench](https://www.swebench.com/) at first glance, but there are [key differences](#PullRequestBenchmark-vs-SWE-bench).
 
 ## Expert PR reviewers are likely expert PR creators
